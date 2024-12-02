@@ -57,7 +57,7 @@ public class SampleAjaxPlugin implements Plugin, WikiAjaxServlet {
 				"onError: function(err){console.log('Error',err);}"+
 			"}).post('params=%s&X-XSRF-TOKEN='+token)", id, url, id, ajaxParams);
 
-		return String.format("<div onclick='%s' style='color: blue; cursor: pointer'>Press Me</div><div id='result%s'></div>", js, id);
+		return String.format("<div onclick=\"%s\" style='color: blue; cursor: pointer'>Press Me</div><div id='result%s'></div>", js, id);
 	}
 
 	@Override
