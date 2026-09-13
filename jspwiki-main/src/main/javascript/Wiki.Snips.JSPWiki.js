@@ -399,7 +399,7 @@ Wiki.Snips = {
     linkPart3:{
         suggest: {
         lback: "\\[(?:[^\\|\\]]+\\|[^\\|\\]]+\\|)([^\\|\\[\\]\\n\\r]*)$",
-        match: "^[^\\|\\]\\n\\r]*"
+        match: "^[^\\|\\]\\n\\r]*(?=\\])"
         },
         linkPart3: [ Dialog.Selection, {
 
